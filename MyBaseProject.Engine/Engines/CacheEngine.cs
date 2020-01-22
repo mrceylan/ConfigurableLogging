@@ -15,7 +15,7 @@ namespace MyBaseProject.Engine.Engines
     }
 
     /// <summary>
-    /// Ekler veya Günceller
+    /// Add or Update Cache
     /// </summary>
     /// <param name="key"></param>
     /// <param name="value"></param>
