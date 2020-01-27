@@ -32,7 +32,7 @@ namespace MyBaseProject.Dal.Contexts
     {
       try
       {
-        SaveLogs().Wait();
+        LoggingProcess().Wait();
       }
       catch { }
       return base.SaveChanges();
@@ -121,7 +121,7 @@ namespace MyBaseProject.Dal.Contexts
 
     }
 
-    private async Task SaveLogs()
+    private async Task LoggingProcess()
     {
       var logConfs = await GetLoggedFields();
       if (logConfs.Count == 0)
